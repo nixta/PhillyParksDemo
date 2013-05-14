@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=7,IE=9">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<title>Parks Sample</title>
+
+  <link rel="stylesheet" href="//serverapi.arcgisonline.com/jsapi/arcgis/3.4/js/dojo/dijit/themes/tundra/tundra.css">
+  <link rel="stylesheet" href="//serverapi.arcgisonline.com/jsapi/arcgis/3.4/js/esri/css/esri.css">
+    <style>
+      html, body { height: 100%; width: 100%; margin: 0; padding: 0; }
+      #mapDiv{
+        padding:0;
+      }
+    </style>
+</head>
+<body >
+	<div class="container-fluid clearfix well" style="height: 100%;">
+		<div class="row-fluid" style="height: 100%;">
+				<div class="span12" style="height: 100%;">
+				<div id="mapDiv" class="well" style="height: 100%" />
+			</div>
+		</div>
+	</div>
+
+	<script>var dojoConfig = {parseOnLoad: true};</script>
+	<script src="http://serverapi.arcgisonline.com/jsapi/arcgis/3.4/"></script>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src='js/main.js'></script>
+</body>
+</html>
