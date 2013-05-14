@@ -16,18 +16,23 @@
       }
     </style>
 </head>
-<body >
-	<div class="container-fluid clearfix well" style="height: 100%;">
+<body class="tundra">
+<!-- 	<div class="container-fluid clearfix well" style="height: 100%;">
 		<div class="row-fluid" style="height: 100%;">
 				<div class="span12" style="height: 100%;">
 				<div id="mapDiv" class="well" style="height: 100%" />
 			</div>
 		</div>
 	</div>
-
+ -->
+	<div data-dojo-type="dijit.layout.BorderContainer" data-dojo-props="design:'headline', gutters:false"
+		 style="width: 100%; height: 100%; margin: 0;">
+		  <div id="mapDiv" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region:'center'" />
+	</div>
 	<script>var dojoConfig = {parseOnLoad: true};</script>
 	<script src="http://serverapi.arcgisonline.com/jsapi/arcgis/3.4/"></script>
 	<script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src='js/credstore.js'></script>
     <script src='js/main.js'></script>
 </body>
 </html>
