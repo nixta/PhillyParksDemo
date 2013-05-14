@@ -15,10 +15,9 @@ dojo.ready(function () {
 			 "esri/tasks/ClosestFacilityParameters",
 			 "esri/tasks/FeatureSet",
 			 "esri/symbols/SimpleLineSymbol",
-			 "dojo/_base/Color",
-			 "esri/IdentityManager"], 
+			 "dojo/_base/Color"], 
 			function(arcGISUtils, ClosestFacilityTask, ClosestFacilityParameters,
-				FeatureSet, SimpleLineSymbol, Color, IdentityManager)
+				FeatureSet, SimpleLineSymbol, Color)
 	{
 		dojo.addOnUnload(storeCredentials);
 		// look for credentials in local storage
