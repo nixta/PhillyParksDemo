@@ -1,6 +1,6 @@
 var cfTaskURL = "http://route.arcgis.com/arcgis/rest/services/World/ClosestFacility/NAServer/ClosestFacility_World/";
 var webMapID = "6fdf3e4a0a8a4f7bb060765e9e658092";
-var querySuffix = "/query?where=1%3D1&returnGeometry=true&outFields=*&f=json";
+var querySuffix = "/query?where=1%3D1&returnGeometry=true&outFields=OBJECTID&f=json";
 
 var map;
 var searchLayer;
@@ -50,6 +50,7 @@ dojo.ready(function () {
 			cfParams.returnRoutes = true;
 			cfParams.defaultTargetFacilityCount = 3;
 			cfParams.travelDirection = esri.tasks.NATravelDirection.TO_FACILITY;
+			cfParams.doNotLocateOnRestrictedElements = true;
 
 			// Tell it to route us to features in the layer we found earlier (Markets)
 			cfParams.facilities = new esri.tasks.DataFile();
